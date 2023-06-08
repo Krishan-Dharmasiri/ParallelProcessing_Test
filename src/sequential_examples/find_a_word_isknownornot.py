@@ -1,5 +1,5 @@
 '''
-    Check whether the given word is in the know words dictionary or not
+    Check whether the given word is in the known words dictionary or not
     this runs sequentially
 '''
 from hashlib import sha512
@@ -17,7 +17,7 @@ def hash_word(word:str) -> str:
 
 def load_words(path:str) -> list[str]:
     '''
-        Loads words from the text file inta list
+        Loads words from the text file into a list
     '''
     with open(path, encoding='utf-8') as file:
         return file.readlines()
@@ -45,4 +45,4 @@ if __name__ == '__main__':
     start = time.perf_counter()
     main()
     finish = time.perf_counter()
-    print(f'Overall time taken to run the main method : {round(finish-start, 2)} second(s)')
+    print(f'Overall time taken  : {round(finish-start, 2)} second(s)')

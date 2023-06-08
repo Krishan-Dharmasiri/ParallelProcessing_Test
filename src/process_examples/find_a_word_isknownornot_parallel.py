@@ -1,6 +1,6 @@
 '''
-    Check whether the given word is in the know words dictionary or not
-    this runs sequentially
+    Check whether the given word is in the known words dictionary or not
+    this runs using multiple processes
 '''
 from hashlib import sha512
 import os
